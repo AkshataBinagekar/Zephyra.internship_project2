@@ -1,0 +1,250 @@
+.women_page{
+    display: flex;
+}
+
+.sidebar_section{
+    margin-left: 18px;
+  flex: 2;
+}
+
+.sidebar{
+margin-left: 20px;
+}
+
+.sidebar_section h4,h2{
+    margin-top: 10px;
+    color: white;
+}
+
+.sidebar-ul{
+    text-decoration: none;
+    list-style: none;
+}
+.sidebar h4{
+    color: white;
+    margin-top: 35px;
+}
+
+.sidebar_list{
+  color:#5ce1e6 ; 
+  cursor: pointer; 
+  margin-top: 12px;
+  margin-left: 25px;
+}
+.sidebar_list:hover{
+    color: white;
+}
+
+.content{
+   flex: 3;
+}
+.filter{
+    margin-top: 80px;
+}
+.filter p{
+    margin-left: 18px;
+    color: #f4fc63;
+    font-size: 15px;
+}
+.filters-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 15px 20px;
+    color: white;
+  }
+  .filters-container :hover{
+    color: black;
+  }
+  
+  .filter-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .filter-item {
+    background-color: transparent;
+    border: 1px solid white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 14px;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .filter-item select {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .filter-item select option {
+    color: #333;
+    background: white;
+  }
+  
+  .filter-item.show-all {
+    border: 1px solid yellow;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: yellow;
+  }
+  
+  .filter-item.show-all i {
+    font-size: 16px;
+  }
+  
+  .filter-item:hover {
+    background-color: white;
+    color: black;
+    transition: all 0.3s ease;
+  }
+  .card_container{
+    margin-top: 80px;
+    display: flex;
+    gap: 20px;
+
+  }
+  .card{
+    height: 200px;
+    width: 200px;
+    background-color: #ae71b1;
+    border: 1px solid #ae71b1;
+
+  }
+ .heart{
+    margin-top: 10px;
+    margin-left: 160px;
+  width: 50px;
+    background-color: #1a1a2e;
+ }
+ .text{
+    color: white;
+    display: flex;
+    gap: 155px;
+ }
+ .text2{
+    margin-top: -20px;
+    color: white;
+    display: flex;
+    gap: 175px;
+ }
+ .fast_delivery{
+    color: #ff66C4;
+ }
+ 
+ /* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .women_page {
+      flex-wrap: wrap; /* Enable wrapping for sidebar and content */
+    }
+  
+    .sidebar_section {
+      flex: 1;
+      margin-left: 100px;
+    }
+  
+    .sidebar_list {
+      margin-left: 15px;
+      font-size: 14px;
+    }
+  
+    .content {
+      flex: 2;
+      margin-top: 20px;
+    }
+  
+    .card_container {
+      justify-content: center; /* Center-align cards */
+      gap: 15px; /* Adjust spacing between cards */
+    }
+  
+    .card {
+        
+      width: 150px;
+      height: 150px;
+    }
+    .heart {
+        margin-top: 5px; /* Adjust top margin for smaller cards */
+        margin-left: auto; /* Center the heart horizontally */
+        /* Add some padding from the right */
+        width: 40px; /* Adjust the size for better visibility */
+        height: 30px;
+      }
+    .filter p {
+      font-size: 13px;
+    }
+  
+    .filter-item {
+      font-size: 12px;
+      padding: 3px 8px;
+    }
+  
+    .filter-item.show-all {
+      font-size: 12px;
+    }
+  
+    .text, .text2 {
+      gap: 80px; /* Reduce gap for smaller screens */
+    }
+  
+    .fast_delivery {
+      text-align: center;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .women_page {
+      flex-direction: column; /* Stack sidebar and content vertically */
+    }
+  
+    .sidebar_section {
+      margin-left: 0;
+      text-align: center;
+    }
+  
+    .sidebar_list {
+      margin-left: 10px;
+      font-size: 12px;
+    }
+  
+    .card_container {
+      gap: 10px;
+    }
+  
+    .card {
+      width: 120px;
+      height: 120px;
+    }
+  
+    .filter p {
+      font-size: 12px;
+    }
+  
+    .filter-item {
+      font-size: 10px;
+    }
+  
+    .text, .text2 {
+      gap: 40px; /* Reduce gap for better alignment */
+      font-size: 12px;
+    }
+  
+    .fast_delivery {
+      font-size: 12px;
+    }
+    .heart {
+        margin-top: 5px; /* Adjust for even smaller cards */
+        margin-left: auto; /* Center horizontally */
+        margin-right: 5px;
+        width: 25px; /* Reduce the size further for mobile screens */
+        height: 25px;
+      }
+  }
+  
